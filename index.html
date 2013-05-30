@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+  <meta name="keywords" content="vaciones,útiles,clavero,2012,fútbol,voley,karate"/>
+  <meta name="description" content="Vacaciones útiles en el Liceo Clavero 2012"/>
+  <meta name="author" content="Oficina De Sistemas"/>
+	<title>Vacaciones útiles Claverinas</title>
+	<link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
+	<link rel="stylesheet" href="photobox/photobox.css">
+	<link rel="stylesheet" href="photobox/photobox.ie.css">
+  <style type="text/css">
+    /* jQuery lightBox plugin - Gallery style */
+    #gallery-box {
+      background-color: #585858;
+      padding: 20px;
+      border-radius:20px;
+    }
+    #gallery-box ul { list-style: none; }
+    #gallery-box ul li { display: inline; }
+    #gallery-box ul img {
+      border: 5px solid #04B404;#3e3e3e
+      -moz-border-radius: 130px; 
+      -webkit-border-radius: 130px; 
+      border-radius: 130px;
+      width: 150px;
+      height: 150px;
+    }
+    #gallery-box ul a:hover img {
+      border: 5px solid #fff;
+      color: #fff;
+      -moz-border-radius: 130px; 
+      -webkit-border-radius: 130px; 
+      border-radius: 130px;
+    }
+    #gallery-box ul a:hover { color: #fff; }
+    .galery_photo{ color : #444444}
+  </style>
+
+</head>
+<body>
+	<div id="gallery-box">
+
+		<H2 style="color:white;">GALER&Iacute;A DE IMAGENES - VACACIONES &Uacute;TILES EN CLAVERO 2013</H2>
+		<ul id="gallery">
+
+<script type="text/javascript">
+for (i=5; i<=24; i++)
+{
+			document.write('<li>');
+            document.write('<a class="galery_photo" href="images/img'+i+'.jpg" title="">');
+            document.write('<img src="images/img'+i+'.jpg" alt=""/>');
+            document.write('</a>');
+			document.write('</li>');
+}
+</script>
+		</ul>
+
+		<br>
+		<h4 style="color:white;text-align:center;">
+			"CON FE, LEALTAD Y DISCIPLINA CLAVERO SIEMPRE PRIMERO"<br>
+			Av. Mercurio S/N Urb. Naval - VENTANILLA - CALLAO - Teléfonos: 5535951<br>
+			Copyright © 2005 - 2013 LNCC - Liceo Naval Capitán de Corbeta Manuel Clavero Muga. 
+		</h4>
+
+	</div>
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src='photobox/photobox.js'></script>
+	<script type="text/javascript">
+    $(function() {
+        $('#gallery').photobox('a', { thumbs:true }, callback);
+        function callback(){
+        console.log('loaded!');
+        };
+    });
+
+//------- Inicio del Script
+function md(e) 
+{ 
+try { if (event.button==2||event.button==3) return false; } 
+catch (e) { if (e.which == 3) return false; } 
+}
+document.oncontextmenu = function() { return false; }
+document.ondragstart = function() { return false; }
+document.onmousedown = md;
+//------- Fin del Script
+
+    </script>
+</body> 
+</html>
